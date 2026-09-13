@@ -40,9 +40,10 @@ if (!prefersReducedMotion) {
   });
 }
 
-// Active nav link on scroll
+// Active nav link on scroll (matches on the hash portion of href, so it
+// works whether the link is "#about" or "index.html#about")
 const sections = document.querySelectorAll("main section[id]");
-const navLinks = document.querySelectorAll('nav a[href^="#"]');
+const navLinks = document.querySelectorAll('nav a[href*="#"]');
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -50,8 +51,8 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute("id");
         navLinks.forEach((link) => {
-          link.style.color =
-            link.getAttribute("href") === `#${id}` ? "var(--navy)" : "";
+          const hash = link.getAttribute("href").split("#")[1];
+          link.style.color = hash === id ? "var(--navy)" : "";
         });
       }
     });

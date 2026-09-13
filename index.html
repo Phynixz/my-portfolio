@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oke Fawaz Adewale — Frontend Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.1.0/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,9 +23,9 @@
       <div class="wrap header-inner">
         <span class="mark">OFA</span>
         <nav>
-          <a href="#work">Work</a>
-          <a href="#about">About</a>
-          <a href="#contact" class="nav-cta">Contact</a>
+          <a href="index.html#about">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="index.html#contact" class="nav-cta">Contact</a>
         </nav>
       </div>
     </header>
@@ -38,7 +42,7 @@
               with a growing interest in sustainability and development work.
             </p>
             <div class="hero-actions">
-              <a href="#work" class="btn btn-primary">See my work</a>
+              <a href="projects.html" class="btn btn-primary">See my work</a>
               <a href="mailto:fawazoke270@gmail.com" class="btn btn-ghost"
                 >Get in touch</a
               >
@@ -75,13 +79,15 @@
             <span class="strip-label">B.Tech Computer Science, KWASU</span>
           </div>
           <div class="strip-item">
-            <span class="strip-value">HTML · CSS · JS</span>
+            <span class="strip-value"
+              >HTML · CSS · JS . REACT JS . TAILWIND CSS</span
+            >
             <span class="strip-label"
               >Core stack, plus React &amp; Tailwind</span
             >
           </div>
           <div class="strip-item">
-            <span class="strip-value">Git</span>
+            <span class="strip-value">Git . GitHub</span>
             <span class="strip-label"
               >Version control &amp; team workflows</span
             >
@@ -122,18 +128,26 @@
             <div class="project-body">
               <h3>Responsive Landing Pages</h3>
               <p>
-                A set of multi-section landing pages built from scratch in HTML,
-                CSS and JavaScript — focused on getting layout, spacing and
-                responsive behaviour right across screen sizes, without relying
-                on a framework.
+                A page for an hotels customers built from scratch in HTML and
+                CSS — focused on getting layout, spacing and responsive
+                behaviour right across screen sizes. Semantic markup, a
+                mobile-first grid, and hand-tuned breakpoints throughout.
               </p>
               <ul class="project-tags">
                 <li>HTML5</li>
                 <li>CSS3</li>
-                <li>JavaScript</li>
+                <li>Responsive design</li>
               </ul>
             </div>
-            <a class="project-link" href="#">View project &nbsp;↗</a>
+            <a
+              class="project-link"
+              href="https://chimerical-babka-494da1.netlify.app/"
+              >View project
+              <i
+                class="fa-solid fa-arrow-up-right-from-square"
+                aria-hidden="true"
+              ></i
+            ></a>
           </article>
 
           <article class="project">
@@ -141,18 +155,29 @@
             <div class="project-body">
               <h3>Interactive UI Components</h3>
               <p>
-                Custom interface elements — navigation, forms, toggles and
-                content reveals — built with vanilla JavaScript to sharpen DOM
-                manipulation and event-handling fundamentals before adopting
-                React.
+                A library of reusable interface elements — buttons, toggles,
+                dropdowns, form fields and cards — built with vanilla JavaScript
+                to sharpen DOM manipulation and event-handling fundamentals
+                before moving into React. Each component was built to be dropped
+                into any page without extra dependencies.
               </p>
               <ul class="project-tags">
                 <li>JavaScript</li>
                 <li>DOM</li>
                 <li>UX</li>
+                <li>Accessibility</li>
+                <li>React</li>
               </ul>
             </div>
-            <a class="project-link" href="#">View project &nbsp;↗</a>
+            <a
+              class="project-link"
+              href="https://weather-app-beta-one-43.vercel.app/"
+              >View project
+              <i
+                class="fa-solid fa-arrow-up-right-from-square"
+                aria-hidden="true"
+              ></i
+            ></a>
           </article>
 
           <article class="project">
@@ -160,24 +185,38 @@
             <div class="project-body">
               <h3>Versioned Team Projects</h3>
               <p>
-                Coursework and peer projects managed with Git — branching,
-                merging and tracking changes across collaborators, building the
-                habits needed for real production workflows.
+                A public IP address tracker built from scratch with HTML, CSS,
+                and JavaScript. The application consumes an IP geolocation API
+                to retrieve and display information about an IP address,
+                including its location and related network details, with the
+                results visualized on an interactive map.
               </p>
               <ul class="project-tags">
                 <li>Git</li>
-                <li>Collaboration</li>
-                <li>React.js</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Responsive design</li>
+                <li>REST API consumption</li>
+                <li>Leaflet.js</li>
+                <li>Geolocation Data</li>
               </ul>
             </div>
-            <a class="project-link" href="#">View project &nbsp;↗</a>
+            <a class="project-link" href="projects.html#project-3"
+              >View project
+              <i
+                class="fa-solid fa-arrow-up-right-from-square"
+                aria-hidden="true"
+              ></i
+            ></a>
           </article>
         </div>
 
-        <p class="project-footnote">
-          Placeholder projects — swap in your real repo names, descriptions and
-          links.
-        </p>
+        <div class="work-more">
+          <a href="projects.html" class="btn btn-ghost"
+            >View full project gallery
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+          ></a>
+        </div>
       </section>
 
       <section class="skills wrap">
